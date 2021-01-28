@@ -1,0 +1,80 @@
+// ===============================================
+//      VARIABLES
+// ===============================================
+$font-brand: 'Open Sans', sans-serif;
+$font-text: 'Roboto', sans-serif;
+
+$color-rubberduck:#F3E36D;
+$color-rubberduck-light:#F5EEB8;
+$color-green-light:#EFF5D6;
+$color-softbrown:#B5AD9D;
+$color-softbrown-tint:#D9D5CD;
+$color-blue-tint:#DBF0F1;
+$color-text:#534f46;
+
+
+// ===============================================
+//      MIXINS
+// ===============================================
+
+// ===============================================
+//      BASIC STYLES
+// ===============================================
+html,
+body{
+    box-sizing: border-box;
+    background-color:$color-blue-tint;
+}
+
+// h1
+// h2
+// h3
+// h4
+// p
+// address
+// nav
+// footer
+// ul
+// li
+nav > ul > li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+// Classes applied in html 
+.parallax__1{
+    background-image: url(img/luis-villasmil-Y6TOX6LnIGs-unsplash.jpg);
+    height:400px;
+     // below is parallax scroll effect
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    background-position: center;
+}
+.parallax__2{
+    background-image: url(img/marjanblan-mAGkGFzzKN8-unsplash.jpg);
+    height:400px;
+     // below is parallax scroll effect
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    background-position: center;
+}
+.parallax__3{
+    background-image: url(img/background-1051850_1920.jpg);
+    height:400px;
+    // below is parallax scroll effect
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    background-position: center;
+}
+.about{
+    background-color:$color-rubberduck-light;
+    color:$color-text;
+    height:#B5AD9D;
+    font-size:1rem;
+}
+// .shopInfo
+// .desc__artist
+// .contact

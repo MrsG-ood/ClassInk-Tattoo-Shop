@@ -1,0 +1,46 @@
+html,
+body {
+  box-sizing: border-box;
+  background-color: #DBF0F1;
+}
+
+nav > ul > li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.parallax__1 {
+  background-image: url(img/luis-villasmil-Y6TOX6LnIGs-unsplash.jpg);
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.parallax__2 {
+  background-image: url(img/marjanblan-mAGkGFzzKN8-unsplash.jpg);
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.parallax__3 {
+  background-image: url(img/background-1051850_1920.jpg);
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.about {
+  background-color: #F5EEB8;
+  color: #534f46;
+  height: #B5AD9D;
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */

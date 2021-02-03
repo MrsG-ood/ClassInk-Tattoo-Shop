@@ -107,7 +107,7 @@ h3{
         @include dropShadow();
     }
 // Nav Links Styling -static page
-    .navList{
+    #navList{
         display: flex;
         margin-right:1rem;
         font-family:$font-brand;   
@@ -116,7 +116,7 @@ h3{
             margin:0 .5rem 0 .5rem;
             }
     }
-    .navList a {
+    #navList a {
         display:block;
     }
     a{
@@ -132,11 +132,11 @@ h3{
     }
 // MOBILE NAVIGATION + ACTIVE STATE=======================================>
  // mobile menu icon - html and css
-    .burger{display:none;}
+    .burger-openNav{display:none;}
 // mobile close menu icon
-    .far{display:none;}
+    // .far{display:none;}
     .far-active{display:block;}
-    .navList-active{display:flex}
+    .navList-active{display:flex;}
 // ================================================
 //  Parallax Images 
 // ================================================ 
@@ -221,6 +221,7 @@ h3{
 .artist{
 padding-bottom:.5rem;
     }    
+  
  // ================================================
 //   Shoppe Info & Footer  
 // ================================================ 
@@ -257,6 +258,7 @@ footer p:last-child {
         width:46px;
         height:44px;
         margin-right:1rem;
+        cursor: pointer;
     }
     .line{
         height:4px;
@@ -265,11 +267,6 @@ footer p:last-child {
         margin-top:8px;
         border-radius:5px;
         background-color:$color-softbrown-tint;
-    }
-    .far{
-        display:none;
-        color:$color-softbrown-tint;
-        margin-right:1rem;
     }
     nav{
         display:flex;
@@ -281,25 +278,25 @@ footer p:last-child {
         color:$color-softbrown-tint;
         background-color:rgba(0, 0, 0, 1);
     }
-    .navList{
+    #navList{
         display: none;
         flex-flow: column nowrap;
         text-align: center;
-        margin-right:1rem;
+        // margin-right:1rem;
         font-family:$font-brand;   
+        z-index:20;
+        cursor: pointer;
         @include none; 
             li{
-            margin:.5rem .5rem 0 .5rem;
-            border-bottom: 1px solid $color-softbrown-tint;
-            width:100vw;
+           margin-top:.8rem;
+           margin-bottom:.8rem;
+            width:60vw;
             height:44px;
-            }
-            li:first-child{
-                padding-top:1.5rem;
             }
             a{
                 text-transform: uppercase;
                 font-size:2rem;
             }
     }
+   
 }

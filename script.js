@@ -1,32 +1,44 @@
-//          to add to uinner html on click of. .burger
-    //    < !-- < div class="close" >
-// {/* <i class="far fa-times-circle"></i>
-// </div> --> */}
-// Notes: when .menu is clicked change display of nav and navList to flex. 
-// When menu is clicked show .close as above. 
-// when .close is clicked hide display of nav.
+// when screen is =- than 992px
+// show burger icon
+// when burger icon is active - add .burger-active
+// classList to show navList & .close icon
+// when .closer icon is clicked remove active classList on navList
+// and .buger
 
+// close buger menu 
+// const bugerOpenNav = document.querySelector('.burger-openNav');
+// show navList
+// 
+// const burger = document.getElementById('burger');
+// show close icon from font awesome
 
-// closes mobile navigation menu (display:none)
-function closeme() { 
-    const close = document.querySelector("close");
-    document.getElementsByClassName('navList').style.display= "none";
+// const closeIcon = document.querySelector('.far-active');
 
+// burger.addEventListener("click", function () {
+//     // console.log( "This is a test");
+// //    mobileNav.classList.add("navList-active", "far-active","burger-openNav");
+//     mobileNav.style.display = "flex"; //shows navList
+//     burger.style.display = "none"; //removes burger icon
+//     close.style.display = "block";
+// });
+
+const burger = document.getElementById('burger');
+const mobileNav = document.getElementById('navList');
+const close = document.getElementById('close');
+const logo = document.getElementById('logoText');
+
+function closeNav(){
+    mobileNav.style.display = "none";
+    burger.style.display = "block";
+    logo.style.display = "flex";
 }
-
-// opens mobile navigation menue (display:block)
-// when.buger is clicked: 
-//     mobile display is set to block &&
-//         innerHTML is added for the close 
-function openme() { 
-    document.getElementById("close").innerHTML += 
-        '<i class="far fa-times-circle"></i>';
-    document.querySelector('buger').style.display = 'none';
-    document.querySelector('logo').style.display = 'none';
-    document.querySelector('navList').style.display= "flex";
+function openNav() { 
+            mobileNav.style.display = "flex"; //shows navList and close icon
+            burger.style.display = "none"; //removes burger icon
+            logo.style.display = "none"; //removes logo
 }
+close.addEventListener("click", closeNav, false);
+burger.addEventListener("click", openNav, false);
 
 
-// .active class with display of block for navlist- use javascript to
-// toggle from .active use .active or active class to use when 
-// .openme is active
+

@@ -64,18 +64,18 @@ nav {
   box-shadow: 9px 8px 24px -7px #000000;
 }
 
-.navList {
+#navList {
   display: flex;
   margin-right: 1rem;
   font-family: "Special Elite", cursive;
   list-style-type: none;
   text-decoration: none;
 }
-.navList li {
+#navList li {
   margin: 0 0.5rem 0 0.5rem;
 }
 
-.navList a {
+#navList a {
   display: block;
 }
 
@@ -93,11 +93,7 @@ a:hover {
   font-weight: bold;
 }
 
-.burger {
-  display: none;
-}
-
-.far {
+.burger-openNav {
   display: none;
 }
 
@@ -257,6 +253,7 @@ footer p:last-child {
     width: 46px;
     height: 44px;
     margin-right: 1rem;
+    cursor: pointer;
   }
 
   .line {
@@ -266,12 +263,6 @@ footer p:last-child {
     margin-top: 8px;
     border-radius: 5px;
     background-color: #D9D5CD;
-  }
-
-  .far {
-    display: none;
-    color: #D9D5CD;
-    margin-right: 1rem;
   }
 
   nav {
@@ -285,25 +276,23 @@ footer p:last-child {
     background-color: black;
   }
 
-  .navList {
+  #navList {
     display: none;
     flex-flow: column nowrap;
     text-align: center;
-    margin-right: 1rem;
     font-family: "Special Elite", cursive;
+    z-index: 20;
+    cursor: pointer;
     list-style-type: none;
     text-decoration: none;
   }
-  .navList li {
-    margin: 0.5rem 0.5rem 0 0.5rem;
-    border-bottom: 1px solid #D9D5CD;
-    width: 100vw;
+  #navList li {
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    width: 60vw;
     height: 44px;
   }
-  .navList li:first-child {
-    padding-top: 1.5rem;
-  }
-  .navList a {
+  #navList a {
     text-transform: uppercase;
     font-size: 2rem;
   }

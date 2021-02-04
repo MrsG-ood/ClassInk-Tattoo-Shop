@@ -54,6 +54,7 @@ body{
     color:$color-text;
     font-family: $font-text;
     background-color: $color-softbrown;
+    scroll-behavior: smooth;
 }
 h2,
 h3{

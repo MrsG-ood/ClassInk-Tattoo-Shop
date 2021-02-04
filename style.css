@@ -140,6 +140,7 @@ a:hover {
   position: relative;
   background-image: url(img/pexels-dan-prado-428105.jpg);
   height: 400px;
+  background-color: #000000;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -151,6 +152,7 @@ a:hover {
 .parallax__2 {
   background-image: url(img/marjanblan-mAGkGFzzKN8-unsplash.jpg);
   height: 400px;
+  background-color: #000000;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -162,6 +164,7 @@ a:hover {
 .parallax__3 {
   background-image: url(img/allef-vinicius-9_EknAv_9Hw-unsplash.jpg);
   height: 400px;
+  background-color: #000000;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -173,6 +176,7 @@ a:hover {
 .parallax__4 {
   background-image: url(img/rubber-duck-594356_1920.jpg);
   height: 400px;
+  background-color: #000000;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;

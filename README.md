@@ -24,8 +24,8 @@ Roadmap
             Sass 
                 <!-- Paralax Scrolling - Off for small devices 576px or less. -->
         Functionality
-            mobile navigation
-        Images- SVG or PNG for LOGO
+            <!-- mobile navigation -->
+        <!-- Images- SVG or PNG for LOGO -->
         
 
 		

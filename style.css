@@ -59,7 +59,7 @@ nav {
   z-index: 5;
   color: #D9D5CD;
   background-color: #424039;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: black;
   -webkit-box-shadow: 9px 8px 24px -7px #000000;
   box-shadow: 9px 8px 24px -7px #000000;
 }
@@ -68,11 +68,36 @@ nav {
   display: flex;
   margin-right: 1rem;
   font-family: "Special Elite", cursive;
+  text-align: center;
+  z-index: 20;
+  cursor: pointer;
   list-style-type: none;
   text-decoration: none;
 }
 #navList li {
   margin: 0 0.5rem 0 0.5rem;
+}
+
+#mobileNavList {
+  display: none;
+  flex-flow: column nowrap;
+  margin-right: 1rem;
+  font-family: "Special Elite", cursive;
+  text-align: center;
+  z-index: 20;
+  cursor: pointer;
+  list-style-type: none;
+  text-decoration: none;
+}
+#mobileNavList li {
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+  width: 60vw;
+  height: 44px;
+}
+#mobileNavList a {
+  text-transform: uppercase;
+  font-size: 2rem;
 }
 
 #navList a {
@@ -85,6 +110,7 @@ a {
   padding: 0.5rem;
   list-style-type: none;
   text-decoration: none;
+  font-size: 1rem;
 }
 
 a:hover {
@@ -93,16 +119,21 @@ a:hover {
   font-weight: bold;
 }
 
-.burger-openNav {
+.burgers {
   display: none;
+  width: 46px;
+  height: 44px;
+  margin-right: 1rem;
+  cursor: pointer;
 }
 
-.far-active {
-  display: block;
-}
-
-.navList-active {
-  display: flex;
+.line {
+  height: 4px;
+  color: black;
+  width: 44px;
+  margin-top: 8px;
+  border-radius: 5px;
+  background-color: #D9D5CD;
 }
 
 .parallax__1 {
@@ -248,53 +279,22 @@ footer p:last-child {
     display: flex;
   }
 
-  .burger {
+  #burger {
     display: block;
-    width: 46px;
-    height: 44px;
-    margin-right: 1rem;
-    cursor: pointer;
-  }
-
-  .line {
-    height: 4px;
-    color: black;
-    width: 44px;
-    margin-top: 8px;
-    border-radius: 5px;
-    background-color: #D9D5CD;
   }
 
   nav {
     display: flex;
     flex-flow: row nowrap;
-    align-items: center;
     justify-content: space-around;
-    width: 100vw;
-    z-index: 5;
-    color: #D9D5CD;
-    background-color: black;
+  }
+
+  #mobileNavList {
+    display: none;
   }
 
   #navList {
     display: none;
-    flex-flow: column nowrap;
-    text-align: center;
-    font-family: "Special Elite", cursive;
-    z-index: 20;
-    cursor: pointer;
-    list-style-type: none;
-    text-decoration: none;
-  }
-  #navList li {
-    margin-top: 0.8rem;
-    margin-bottom: 0.8rem;
-    width: 60vw;
-    height: 44px;
-  }
-  #navList a {
-    text-transform: uppercase;
-    font-size: 2rem;
   }
 }
 
